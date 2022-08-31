@@ -1,4 +1,4 @@
-package com.example.jpaCRUDvalidacion.infrastructure.DTO;
+package com.example.jpaCRUDvalidacion.infrastructure.dto;
 
 import com.example.jpaCRUDvalidacion.domain.Persona;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.example.jpaCRUDvalidacion.application;
+package com.example.jpaCRUDvalidacion.infrastructure.repository;
 
 import com.example.jpaCRUDvalidacion.domain.Persona;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,6 +1,6 @@
 package com.example.jpaCRUDvalidacion.domain;
 
-import com.example.jpaCRUDvalidacion.infrastructure.DTO.PersonaInputDTO;
+import com.example.jpaCRUDvalidacion.infrastructure.dto.PersonaInputDTO;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -42,9 +42,7 @@ public class Persona {
     private Date termination_date;
 
     public Persona(PersonaInputDTO personaInputDTO){
-        if (personaInputDTO == null){
-            return;
-        }
+
         setId_persona(personaInputDTO.getId_persona());
         setUsuario(personaInputDTO.getUsuario());
         setPassword(personaInputDTO.getPassword());

@@ -1,8 +1,8 @@
 package com.example.jpaCRUDvalidacion.application;
 
-import com.example.jpaCRUDvalidacion.domain.Persona;
-import com.example.jpaCRUDvalidacion.infrastructure.DTO.PersonaInputDTO;
-import com.example.jpaCRUDvalidacion.infrastructure.DTO.PersonaOutputDTO;
+import com.example.jpaCRUDvalidacion.NotFoundException;
+import com.example.jpaCRUDvalidacion.infrastructure.dto.PersonaInputDTO;
+import com.example.jpaCRUDvalidacion.infrastructure.dto.PersonaOutputDTO;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ public interface PersonaService {
     public PersonaOutputDTO addPersona(PersonaInputDTO personaInputDTO) throws Exception;
 
 
-    public void deletePersona(int id) throws Exception;
+    public void deletePersona(int id) throws NotFoundException;
 
     public PersonaOutputDTO getById(int id) throws Exception;
 
